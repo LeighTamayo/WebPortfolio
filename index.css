@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+
+/* General Page Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333;
+}
+
+h1, h2, h5.card-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Adds smooth scrolling when clicking navbar links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Padding */
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Landing Section */
+#landing {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('https://miro.medium.com/v2/resize:fit:1400/1*wlQGuAKR89IXdBUqLZCwQA.jpeg') no-repeat center center/cover;
+    min-height: 100vh;
+    color: white;
+}
+
+#landing h1 {
+    font-size: 3.5rem;
+}
+
+#landing h2 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+/* Projects Section */
+#projects {
+    background-color: darkslategray;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#projects .card-img-top {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+
+/* Tools Section */
+#tools img {
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+#tools img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: darkslategrey;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Footer Styles */
+.footer-custom {
+   
+    background-color: #0d244f; 
+}
+
+.footer-custom p {
+  
+    font-size: 0.9rem;
+}
+
+
+/* --- Responsiveness --- */
+
+/* For Tablets */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+    #landing h1 {
+        font-size: 2.2rem;
+    }
+    #landing h2 {
+        font-size: 1.5rem;
+    }
+    .navbar-brand, .nav-link {
+        font-size: 0.9rem;
+    }
+    #tools img {
+        width: 100px; /* Smaller logos on mobile */
+        margin: 10px;
+    }
+}
